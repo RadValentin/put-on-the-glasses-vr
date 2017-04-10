@@ -35,6 +35,8 @@ export default class TheGlasses extends React.Component {
       <Animated.View
         style={{
           opacity: this.state.opacity,
+          width: .8,
+          height: .1,
           transform: [
             {translateX: this.state.xPosition},
             {translateY: this.state.yPosition},
