@@ -11,7 +11,7 @@ import {
   Animated
 } from 'react-vr';
 
-import TheGlasses from './components/TheGlasses.vr.js'
+import TheGlasses from './components/TheGlasses.vr.js';
 
 export default class putontheglasses extends React.Component {
   constructor() {
@@ -37,10 +37,10 @@ export default class putontheglasses extends React.Component {
           }}>
           <SpotLight intensity={1.5} style={{color: '#00d8ff'}} />
           {this.state.alternateMode ?
-            <Pano source={asset('times-square-pano-alternate.jpg')} /> :
+            <Pano source={asset('teapots.jpg')} /> :
             <Pano source={asset('times-square-pano.jpg')} />
           }
-          {this.state.showName && !this.state.alternateMode?
+          {this.state.showName && !this.state.alternateMode ?
           <VrButton
               onClick={this.showTitle}
               style={{
@@ -79,7 +79,7 @@ export default class putontheglasses extends React.Component {
                 }}>adulescu</Animated.Text>
           </VrButton> : null}
           <TheGlasses onClick={this.toggleMode}/>
-          {!this.state.showName ?
+          {!this.state.showName && !this.state.alternateMode ?
           <VrButton onClick={() => this.setState({showName: true})}
             style={{
               height: .15,
