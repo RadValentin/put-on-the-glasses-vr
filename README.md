@@ -22,4 +22,4 @@ If it gets stuck at `Loading dependency graph, done.` make sure to reload the pa
 
 ## Video (Romanian Language)
 
-[![Valentin Radulescu - React VR 101 - React.js Meetup #6](https://img.youtube.com/vi/v_tAxOD2ZsE/0.jpg)](https://www.youtube.com/watch?v=v_tAxOD2ZsE)]
+[![Valentin Radulescu - React VR 101 - React.js Meetup #6](https://img.youtube.com/vi/v_tAxOD2ZsE/0.jpg)](https://www.youtube.com/watch?v=v_tAxOD2ZsE)
