@@ -20,3 +20,7 @@ If it gets stuck at `Loading dependency graph, done.` make sure to reload the pa
 [360 Times Square pano](https://goo.gl/maps/uPEC9vw4KK72) from Panedia
 
 [Raybanz model](http://tf3dm.com/3d-model/raybanz-sunglasses-50410.html) by Hazzbberry
+
+## Video (Romanian Language)
+
+[![Valentin Radulescu - React VR 101 - React.js Meetup #6](https://img.youtube.com/vi/v_tAxOD2ZsE/0.jpg)](https://www.youtube.com/watch?v=v_tAxOD2ZsE)]
