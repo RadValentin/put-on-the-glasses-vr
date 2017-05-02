@@ -1,5 +1,4 @@
 # Put on the Glasses! VR
----
 
 Intro slide for my talk on ReactVR held at [React.js Bucharest Meetup](https://www.meetup.com/react-bucharest/) on April 11 2017
 
