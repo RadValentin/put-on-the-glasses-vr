@@ -1,8 +1,8 @@
-# Put on the Glasses! VR
+# [Put on the Glasses! VR](https://radvalentin.github.io/put-on-the-glasses-vr/)
 
 Intro slide for my talk on ReactVR held at [React.js Bucharest Meetup](https://www.meetup.com/react-bucharest/) on April 11 2017
 
-![the glasses](static_assets/the_glasses.gif)
+[![the glasses](static_assets/the_glasses.gif)](https://radvalentin.github.io/put-on-the-glasses-vr/)
 
 Rest of the slides can be found here: [React VR 101](https://docs.google.com/presentation/d/1_ookC72csAi3UixYIsd9wxGZW83B1gTMntvNZVcAjy8/edit?usp=sharing)
 
