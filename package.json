@@ -6,20 +6,22 @@
     "start": "npm run open && node node_modules/react-native/local-cli/cli.js start",
     "bundle": "node node_modules/react-vr/scripts/bundle.js",
     "open": "node -e \"require('xopen')('http://localhost:8081/vr?hotreload')\"",
+    "devtools": "react-devtools",
     "test": "jest"
   },
   "dependencies": {
-    "ovrui": "~1.0.0",
+    "ovrui": "~1.2.0",
     "react": "~15.4.1",
     "react-native": "~0.42.0",
     "three": "^0.80.1",
-    "react-vr": "~1.0.0",
-    "react-vr-web": "~1.0.0"
+    "react-vr": "~1.2.0",
+    "react-vr-web": "~1.2.0"
   },
   "devDependencies": {
     "babel-jest": "^19.0.0",
     "babel-preset-react-native": "^1.9.1",
     "jest": "^19.0.2",
+    "react-devtools": "^2.1.3",
     "react-test-renderer": "~15.4.1",
     "xopen": "1.0.0"
   },
