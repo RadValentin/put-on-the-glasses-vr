@@ -83,7 +83,7 @@ export default class putontheglasses extends React.Component {
               </Animated.Text>
             </VrButton>
           : null}
-        <TheGlasses onClick={this.toggleMode} />
+        {!this.state.alternateMode && <TheGlasses onClick={this.toggleMode} />}
         {!this.state.showName && !this.state.alternateMode
           ? <VrButton
               onClick={() => this.setState({ showName: true })}

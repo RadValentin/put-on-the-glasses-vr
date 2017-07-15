@@ -6,7 +6,6 @@ export default class TheGlasses extends React.Component {
     super(props);
 
     this.state = {
-      opacity: new Animated.Value(1),
       xPosition: new Animated.Value(0),
       yPosition: new Animated.Value(0),
       yRotation: new Animated.Value(0),
@@ -27,7 +26,6 @@ export default class TheGlasses extends React.Component {
     return (
       <Animated.View
         style={{
-          opacity: this.state.opacity,
           width: 0.8,
           height: 0.1,
           transform: [
@@ -43,6 +41,8 @@ export default class TheGlasses extends React.Component {
           onExit={this.exitSpinAnimation}>
           <Model
             lit={true}
+            materialParameters={{
+            }}
             source={{
               obj: asset('raybanz.obj'),
               mtl: asset('raybanz.mtl')
@@ -105,10 +105,6 @@ export default class TheGlasses extends React.Component {
       }),
       Animated.timing(this.state.zPosition, {
         toValue: 0.3,
-        duration: 300
-      }),
-      Animated.timing(this.state.opacity, {
-        toValue: 0.1,
         duration: 300
       })
     ]).start(() => this.props.onClick());
