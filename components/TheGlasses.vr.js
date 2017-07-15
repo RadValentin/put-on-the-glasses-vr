@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  asset,
-  Model,
-  VrButton,
-  View,
-  Animated,
-  Cylinder
-} from 'react-vr';
+import { asset, Model, VrButton, View, Animated, Box } from 'react-vr';
 
 export default class TheGlasses extends React.Component {
   constructor(props) {
@@ -35,13 +28,13 @@ export default class TheGlasses extends React.Component {
       <Animated.View
         style={{
           opacity: this.state.opacity,
-          width: .8,
-          height: .1,
+          width: 0.8,
+          height: 0.1,
           transform: [
-            {translateX: this.state.xPosition},
-            {translateY: this.state.yPosition},
-            {translateZ: this.state.zPosition},
-            {rotateY: this.state.yRotation},
+            { translateX: this.state.xPosition },
+            { translateY: this.state.yPosition },
+            { translateZ: this.state.zPosition },
+            { rotateY: this.state.yRotation }
           ]
         }}>
         <VrButton
@@ -52,19 +45,20 @@ export default class TheGlasses extends React.Component {
             lit={true}
             source={{
               obj: asset('raybanz.obj'),
-              mtl: asset('raybanz.mtl'),
+              mtl: asset('raybanz.mtl')
             }}
-            style={{transform: [{scale: .002}]}}
+            style={{ transform: [{ scale: 0.002 }] }}
           />
-          <Model
-            source={{
-              obj: asset('transparent-cube.obj'),
-              mtl: asset('transparent-cube.mtl'),
-            }}
+          {/* Add an invisible box so that we catch hover events in the 
+           approximate area of the glasses without stickying strictly to their 
+           shape. */}
+          <Box
+            dimWidth={1.2}
+            dimDepth={1.2}
+            dimHeight={1}
             style={{
-              transform: [
-                {scale: .01}
-              ]
+              opacity: 0,
+              transform: [{ translate: [0, 0.2, 0] }]
             }}
           />
         </VrButton>
@@ -75,8 +69,8 @@ export default class TheGlasses extends React.Component {
   cycleHoverAnimation() {
     Animated.sequence([
       Animated.timing(this.state.yPosition, {
-        toValue: .2,
-        duration: 2500,
+        toValue: 0.2,
+        duration: 2500
       }),
       Animated.timing(this.state.yPosition, {
         toValue: 0,
@@ -114,7 +108,7 @@ export default class TheGlasses extends React.Component {
         duration: 300
       }),
       Animated.timing(this.state.opacity, {
-        toValue: 0,
+        toValue: 0.1,
         duration: 300
       })
     ]).start(() => this.props.onClick());
