@@ -1,5 +1,7 @@
 # [Put on the Glasses! VR](https://radvalentin.github.io/put-on-the-glasses-vr/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/RadValentin/put-on-the-glasses-vr.svg)](https://greenkeeper.io/)
+
 Intro slide for my talk on ReactVR held at [React.js Bucharest Meetup](https://www.meetup.com/react-bucharest/) on April 11 2017
 
 [![the glasses](static_assets/the_glasses.gif)](https://radvalentin.github.io/put-on-the-glasses-vr/)
